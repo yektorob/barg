@@ -1,0 +1,13 @@
+{
+  "company": "شرکت تستی",
+  "license_id": "LIC-TEST-0002",
+  "features": [
+    "bank_mapper",
+    "sales",
+    "seasonal_sales",
+    "tax_dashboard",
+    "ziyafat_page"
+  ],
+  "expires": "2024-02-24",
+  "signature": "6f2e99e4b019b6694f31bb3a220e378dd9a7389cf29cf384e67a3682d62c2096"
+}

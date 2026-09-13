@@ -1,0 +1,18 @@
+{
+  "company": "شرکت تستی",
+  "license_id": "LIC-TEST-0002",
+  "features": [
+    "bank_mapper",
+    "reconciliation",
+    "shaparak_sales",
+    "seasonal_sales",
+    "tejarat_system",
+    "performance",
+    "daily_report",
+    "sales",
+    "tax_dashboard",
+    "ziyafat"
+  ],
+  "expires": "2027-04-12",
+  "signature": "69387d1fc4082a94aab8df9d5f9070f337ba7994ecfc3399b48620c28197f3d7"
+}

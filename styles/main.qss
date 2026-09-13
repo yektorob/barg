@@ -1,0 +1,25 @@
+/* styles/main.qss */
+
+QMainWindow {
+    background-color: #121212;
+}
+
+NavButton {
+    background: transparent;
+    color: #E0E0E0;
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 14px;
+    min-height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+NavButton:hover {
+    background: #333333;
+}
+NavButton:pressed {
+    background: #444444;
+}
+NavButton:checked {
+    background: #333333;
+}

@@ -1,0 +1,180 @@
+/* ===== تم تیره عمومی ===== */
+QWidget#AbbaspoorPage {
+    background: #121212;
+    color: #F5F5F5;
+}
+
+/* قاب اصلی داخل اسکرول */
+QFrame#AbbaspoorFrame {
+    background: #1E1E1E;
+    border: 1px solid #383838;
+    border-radius: 16px;
+}
+
+/* ===== فیلدهای ورودی ===== */
+QLineEdit, QAbstractSpinBox, QComboBox, QTextEdit {
+    border: 1px solid #383838;           /* ثابت بماند تا پرش نداشته باشیم */
+    border-radius: 20px;
+    background: transparent;
+    color: #F5F5F5;
+    min-height: 40px;
+    padding: 0 12px;
+    selection-background-color: #3A86FF;
+    selection-color: #FFFFFF;
+}
+QLineEdit:focus, QAbstractSpinBox:focus, QComboBox:focus, QTextEdit:focus {
+    border: 1px solid #FFFFFF;           /* فقط رنگ را عوض کن */
+}
+QLineEdit:read-only, QTextEdit:read-only {
+    color: #A0A0A0;
+    border-color: #2A2A2A;
+    background: rgba(255,255,255,0.03);
+}
+QLineEdit:disabled, QAbstractSpinBox:disabled, QComboBox:disabled, QTextEdit:disabled {
+    color: #8C8C8C;
+    border-color: #2A2A2A;
+    background: rgba(255,255,255,0.02);
+}
+
+/* Spin buttons واضح‌تر */
+QAbstractSpinBox::up-button, QAbstractSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 28px; height: 20px;
+    border-left: 1px solid #383838;
+    background: #2C2E33;
+}
+QAbstractSpinBox::up-button:hover, QAbstractSpinBox::down-button:hover {
+    background: #353842;
+}
+QAbstractSpinBox::up-button:disabled, QAbstractSpinBox::down-button:disabled {
+    background: #242424; border-left: 1px solid #2A2A2A;
+}
+
+/* ===== دکمه‌ها ===== */
+QPushButton {
+    border: 1px solid #383838;
+    border-radius: 20px;
+    background-color: #2C2E33;
+    color: #F5F5F5;
+    padding: 0 16px;
+    min-height: 40px;
+}
+QPushButton:hover { border-color: #FFFFFF; }
+QPushButton:pressed { background-color: #1E1E1E; }
+QPushButton:disabled {
+    color: #8C8C8C; border-color: #2A2A2A; background-color: #242424;
+}
+/* Primary */
+QPushButton[variant="primary"] {
+    background-color: #3A86FF; border: none; color: #FFFFFF;
+}
+QPushButton[variant="primary"]:hover { background-color: #3479E6; }
+QPushButton[variant="primary"]:pressed { background-color: #2C68C4; }
+
+/* دکمه آیکنی نوتیف – با همان objectName در کد */
+#NotifBtn {
+    min-width: 36px; min-height: 36px;
+    max-width: 36px; max-height: 36px;
+    border-radius: 18px;
+    padding: 0; border: none;
+    background-color: #3A86FF; color: #FFFFFF;
+}
+#NotifBtn:hover { background-color: #3479E6; }
+#NotifBtn:pressed { background-color: #2C68C4; }
+#NotifBtn:disabled { background-color: #2A2A2A; color: #8C8C8C; }
+
+/* ===== GroupBox‌ها ===== */
+QGroupBox {
+    border: 1px solid #383838;
+    border-radius: 12px;
+    margin-top: 20px;
+    background: transparent;
+    color: #F5F5F5;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top right;
+    padding: 0 8px;
+    margin: -10px 10px 0 0;
+    background: #1E1E1E;
+    color: #F5F5F5;
+    border: 1px solid #383838;
+    border-radius: 8px;
+}
+/* ResultBox: اگر objectName ست شود */
+#ResultBox { border-radius: 14px; }
+
+/* Radio / Checkbox */
+QRadioButton, QCheckBox { color: #F5F5F5; }
+QRadioButton::indicator, QCheckBox::indicator {
+    width: 18px; height: 18px;
+    border: 1px solid #383838; background: #2C2E33;
+}
+QRadioButton::indicator { border-radius: 9px; }
+QCheckBox::indicator { border-radius: 4px; }
+QRadioButton::indicator:checked,
+QCheckBox::indicator:checked { background: #3A86FF; border: 1px solid #FFFFFF; }
+QRadioButton:disabled, QCheckBox:disabled { color: #8C8C8C; }
+QRadioButton::indicator:disabled, QCheckBox::indicator:disabled {
+    background: #242424; border: 1px solid #2A2A2A;
+}
+
+/* Combo popup */
+QComboBox QAbstractItemView {
+    background: #1E1E1E; border: 1px solid #383838; color: #F5F5F5;
+    selection-background-color: #3A86FF; selection-color: #FFFFFF;
+}
+QComboBox::drop-down { width: 36px; border-left: 1px solid #383838; }
+
+/* لیست و اسکرول */
+QListWidget {
+    background: transparent;
+    border: 1px solid #383838;
+    border-radius: 12px;
+    color: #F5F5F5;
+}
+QScrollArea { background: transparent; border: none; }
+QScrollArea > QWidget > QWidget { background: transparent; }
+QScrollBar:vertical, QScrollBar:horizontal { background: transparent; margin: 2px; }
+QScrollBar:vertical { width: 10px; } QScrollBar:horizontal { height: 10px; }
+QScrollBar::handle { background: #383838; border-radius: 5px; min-height: 24px; min-width: 24px; }
+QScrollBar::handle:hover { background: #4A4A4A; }
+
+/* Tabs */
+QTabWidget::pane { border: none; background: transparent; }
+QTabBar::tab {
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 8px;
+    color: #A0A0A0;
+}
+QTabBar::tab:selected {
+    color: #F5F5F5;
+    border-bottom: 3px solid #ffa500;
+}
+QTabBar::tab:!selected { border-bottom: 3px solid transparent; }
+QTabBar::tab:hover { color: #FFFFFF; }
+
+/* آیتم فایل آپلودی (ویجت سفارشی) */
+QWidget#FileRow { background: transparent; }
+QWidget#FileRow QLabel { color: #F5F5F5; }
+QPushButton[role="chip-close"] {
+    min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px;
+    border-radius: 12px; padding: 0;
+    background: #2C2E33; border: 1px solid #383838;
+}
+QPushButton[role="chip-close"]:hover { background: #353842; }
+
+/* کارت‌های یادداشت (DynamicNotesWidget) */
+QFrame#NoteCard {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid #383838;
+    border-radius: 12px;
+}
+QFrame#NoteCard:hover { border-color: #FFFFFF; }
+QTextEdit#NoteText { padding: 6px 8px; }
+QPushButton#DelNote {
+    border: 1px solid #383838; border-radius: 8px; background: #2C2E33; color: #F5F5F5;
+}
+QPushButton#DelNote:hover { border-color: #FFFFFF; }
